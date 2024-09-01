@@ -5,8 +5,8 @@ from pyspark.sql.window import Window
 # Spark session creation
 spark = SparkSession.builder \
     .appName("Kafka Spark Consumer") \
-    .config("spark.hadoop.fs.s3a.access.key", "AKIATTSKF7O5DHTEUW4D") \
-    .config("spark.hadoop.fs.s3a.secret.key", "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") \
+    .config("spark.hadoop.fs.s3a.access.key", "update-accesskey") \
+    .config("spark.hadoop.fs.s3a.secret.key", "update-secretkey") \
     .config("spark.hadoop.fs.s3a.endpoint", "s3.amazonaws.com") \
     .config("spark.hadoop.fs.s3a.connection.maximum", "100") \
     .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
